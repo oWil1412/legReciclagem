@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossa Equipe - Reciclagem</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styleContato.css"/>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png"></a>
+        <div class="navDesk">
+          <a href="index.html"><button style="color:white;">Início</button></a>
+          <a href="#"><button style="color:white;">Sobre</button></a>
+          <a href="pgContato.html"><button style="color:white;">Contato</button></a>
+        </div>
+        <button id="menu-btn" class="menu-toggle">☰</button>
+        <!-- menu lateral para mobile -->
+        <div id="sidebar" class="mobile-menu -translate-x-full">
+          <button id="close-btn" class="sidebarButton">✖</button>
+          <a href="#"><button class="sidebarButton">Início</button></a><br>
+          <a href="#"><button class="sidebarButton">Sobre</button></a><br>
+          <a href="pgContato.html"><button class="sidebarButton">Contato</button></a>
+        </div>
+        <div id="overlay" class="hidden" style="position:fixed;top:0;left:0;width:100%;height:100%;background:black;opacity:0.5;z-index:10;"></div>
+        <div class="search">
+          <input type="search" placeholder="" style="margin:5px;">
+          <a href=""><img src="img/lupa.png" style="width:25px;"></a>
+        </div>
+        <script>
+          const menuBtn = document.getElementById('menu-btn');
+          const closeBtn = document.getElementById('close-btn');
+          const sidebar = document.getElementById('sidebar');
+          const overlay = document.getElementById('overlay');
+          menuBtn.addEventListener('click', () => {
+            sidebar.classList.remove('-translate-x-full');
+            overlay.classList.remove('hidden');
+          });
+          closeBtn.addEventListener('click', () => {
+            sidebar.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+          });
+          overlay.addEventListener('click', () => {
+            sidebar.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+          });
+        </script>
+    </header>
+    <div class="container"> 
+    <!-- CARD 1 - WILIAN -->
+    <div class="card">
+      <img src="img/logo1.jpeg" alt="Ícone Reciclagem" class="recycle" />
+      <img src="img/wilian.jpeg" alt="Foto" class="photo" />
+      <h2><b>Wilian de Lima</b></h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/wil_limma_/" target="_blank"><img src="img/instaLogo.jpeg"
+            alt="Instagram"></a>
+        <a href="https://wa.me/554699259321" target="_blank"><img src="img/zap.jpeg" alt="WhatsApp"></a>
+        <a href="portfolioWilian.html" href="cssPortfolio.css" target="_blank"><img src="img/portfolio.jpeg"
+            alt="Portfólio"></a>
+      </div>
+      <div class="email">wilianlimma8@gmail.com</div>
+    </div>
+
+    <!-- CARD 2 - FLAVIO -->
+    <div class="card">
+      <img src="img/logo1.jpeg" alt="Ícone Reciclagem" class="recycle" />
+      <img src="img/flavio.jpeg" alt="Foto" class="photo" />
+      <h2><b>Flavio Slongo</b></h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/flavio_ssl/?igsh=YWVhN2Q2NzY3MzQ=" target="_blank"><img
+            src="img/instaLogo.jpeg" alt="Instagram"></a>
+        <a href="https://wa.me/5549991515387" target="_blank"><img src="img/zap.jpeg" alt="WhatsApp"></a>
+      </div>
+      <div class="email">flavio.pipo89@gmail.com</div>
+    </div>
+
+    <!-- CARD 3 - HENRIQUE -->
+    <div class="card">
+      <img src="img/logo1.jpeg" alt="Ícone Reciclagem" class="recycle" />
+      <img src="img/henrique.jpeg" alt="Foto" class="photo" />
+      <h2><b>Henrique Gabriel</b></h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/hiquee_gabriel/" target="_blank"><img src="img/instaLogo.jpeg"
+            alt="Instagram"></a>
+        <a href="https://wa.me/5546991167618" target="_blank"><img src="img/zap.jpeg" alt="WhatsApp"></a>
+      </div>
+      <div class="email">henriquegabbriel19@gmail.com</div>
+    </div>
+
+    <!-- CARD 4 - ANDREI -->
+    <div class="card">
+      <img src="img/logo1.jpeg" alt="Ícone Reciclagem" class="recycle" />
+      <img src="img/andrei.jpeg" alt="Foto" class="photo" />
+      <h2><b>Andrei Campos</b></h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/andreii_camposs/" target="_blank"><img src="img/instaLogo.jpeg"
+            alt="Instagram"></a>
+        <a href="https://wa.me/5546991134743" target="_blank"><img src="img/zap.jpeg" alt="WhatsApp"></a>
+      </div>
+      <div class="email">Andrei10campos@gmail.com</div>
+    </div>
+
+    <!-- CARD 5 - GUSTAVO -->
+    <div class="card">
+      <img src="img/logo1.jpeg" alt="Ícone Reciclagem" class="recycle" />
+      <img src="img/gustavo.jpeg" alt="Foto" class="photo" />
+      <h2><b>Gustavo Ebertz</b></h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/_gustavotzz/" target="_blank"><img src="img/instaLogo.jpeg"
+            alt="Instagram"></a>
+        <a href="https://wa.me/5546991116173" target="_blank"><img src="img/zap.jpeg" alt="WhatsApp"></a>
+      </div>
+      <div class="email">gustavoebertz8@gmail.com</div>
+    </div>
+
+    <!-- CARD 6 - LUIS -->
+    <div class="card">
+      <img src="img/logo1.jpeg" alt="Ícone Reciclagem" class="recycle" />
+      <img src="img/luis.jpeg" alt="Foto" class="photo" />
+      <h2><b>Luis Marcelino</b></h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/luis.edml/" target="_blank"><img src="img/instaLogo.jpeg"
+            alt="Instagram"></a>
+        <a href="https://wa.me/5546999810175" target="_blank"><img src="img/zap.jpeg" alt="WhatsApp"></a>
+      </div>
+      <div class="email">luiseduardo200777@gmail.com</div>
+    </div>
+
+    <!-- CARD 7 - JEISON -->
+    <div class="card">
+      <img src="img/logo1.jpeg" alt="Ícone Reciclagem" class="recycle" />
+      <img src="img/jeiso.jpeg" alt="Foto" class="photo" />
+      <h2><b>Jeison Vargas</b></h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/jeison_schmitz/" target="_blank"><img src="img/instaLogo.jpeg"
+            alt="Instagram"></a>
+        <a href="https://wa.me/5549991777969" target="_blank"><img src="img/zap.jpeg" alt="WhatsApp"></a>
+      </div>
+      <div class="email">jeisonschmitz7@gmail.com</div>
+    </div>
+
+    <!-- CARD 8 - LEONARDO -->
+    <div class="card">
+      <img src="img/logo1.jpeg" alt="Ícone Reciclagem" class="recycle" />
+      <img src="img/leo.jpeg" alt="Foto" class="photo" />
+      <h2><b>Leonardo Hences</b></h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/leohences/" target="_blank"><img src="img/instaLogo.jpeg"
+            alt="Instagram"></a>
+        <a href="https://wa.me/5546999335700" target="_blank"><img src="img/zap.jpeg" alt="WhatsApp"></a>
+      </div>
+      <div class="email">leonardohences0@gmail.com</div>
+    </div>
+
+    <!-- CARD 9 - PEDRO -->
+    <div class="card">
+      <img src="img/logo1.jpeg" alt="Ícone Reciclagem" class="recycle" />
+      <img src="img/tuca.jpeg" alt="Foto" class="photo" />
+      <h2><b>Pedro Favero</b></h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/faveropedro_/" target="_blank"><img src="img/instaLogo.jpeg"
+            alt="Instagram"></a>
+        <a href="https://wa.me/5546991120950" target="_blank"><img src="img/zap.jpeg" alt="WhatsApp"></a>
+      </div>
+      <div class="email">phfavero05@gmail.com</div>
+    </div>
+  </div>
+  <footer>
+      <p>
+        Unipar Francisco Beltrão - Av. Júlio Assis Cavalheiro, 2000 - Centro,
+        Francisco Beltrão - PR, 85601-000
+      </p>
+      <p></p>
+    </footer>
+</body>
+</html>

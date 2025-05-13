@@ -1,0 +1,186 @@
+<!-- Deus seja louvado -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legislação Sobre Reciclagem</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" />
+      <div class="navDesk">
+        <a href="#"><button style="color: white">Início</button></a>
+        <a href="#"><button style="color: white">Sobre</button></a>
+        <a href="pgContato.html"
+          ><button style="color: white">Contato</button></a
+        >
+      </div>
+      <button id="menu-btn" class="menu-toggle">☰</button>
+      <!-- menu lateral para mobile -->
+      <div id="sidebar" class="mobile-menu -translate-x-full">
+        <button id="close-btn" class="sidebarButton">✖</button>
+        <a href="#"><button class="sidebarButton">Início</button></a><br />
+        <a href="#"><button class="sidebarButton">Sobre</button></a><br />
+        <a href="#"><button class="sidebarButton">Contato</button></a>
+      </div>
+      <div id="overlay" class="hidden" style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: black;opacity: 0.5;z-index: 10;"></div>
+      <div class="search">
+        <form onsubmit="pesquisar(); return false;">
+          <input type="search" id="campoPesquisa" placeholder="Pesquisar" style="margin:5px;">
+          <button type="submit"><img src="img/lupa.png" style="width:25px;"></button>
+        </form>
+      </div>
+      <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const closeBtn = document.getElementById("close-btn");
+        const sidebar = document.getElementById("sidebar");
+        const overlay = document.getElementById("overlay");
+        menuBtn.addEventListener("click", () => {
+          sidebar.classList.remove("-translate-x-full");
+          overlay.classList.remove("hidden");
+        });
+        closeBtn.addEventListener("click", () => {
+          sidebar.classList.add("-translate-x-full");
+          overlay.classList.add("hidden");
+        });
+        overlay.addEventListener("click", () => {
+          sidebar.classList.add("-translate-x-full");
+          overlay.classList.add("hidden");
+        });
+      </script>
+    </header>
+    <main>
+      <article>
+        <p style="font-size:150%;">Lixo Eletrônico</p>
+        <p>O lixo eletrônico (e-lixo) ou tecnológico, como o próprio nome indica, é aquele proveniente de materiais eletrônicos. Ele também é conhecido pela sigla RAEE (Resíduos de Aparelhos Eletroeletrônicos).</p>
+        <p>O aumento global do lixo eletrônico foi causado pelo rápido avanço tecnológico e pela obsolescência programada dos dispositivos eletrônicos. Muitas pessoas optam por substituir seus dispositivos eletrônicos à medida que os antigos se tornam obsoletos e novos são lançados, criando um acúmulo de resíduos</p>
+        <p>O Lixo eletrônico é divido em 4 categorias, Linha azul, Linha verde, Linha marrom e linha branca.</p>
+        <p>AZUL: Pequenos eletrodomésticos e ferramentas elétricas. Exemplo: Prafusadeira/furadeira, liquidificador,batedeira.</p>
+        <p>VERDE: Equipamentos de informática e telefonia. Exemplo: computador, notbook,  impressora, telefones, celulares.</p>
+        <p>MARROM: Equipamentos de áudios e video. Exemplo: Som, TV, video game, home theater.</p>
+        <p>BRANCO: Grandes eletrodomésticos. Exemplo fogão, máquinas de lavar, microondas.
+        <p style="font-size:150%;">Riscos à Saúde</p>
+        <p>O descarte incorreto do lixo eletrônico causa grandes riscos à saúde, principalmente devido à presença de substâncias tóxicas como chumbo, mercúrio e cádmio.</p>
+        <p>A exposição a esses metais pesados pode levarw a problemas de saúde graves, como câncer, problemas respiratórios, danos ao sistema nervoso e distúrbios hormonais.</p>
+        <p>Além disso a contaminação do solo e água com esses resíduos afeta a saúde de toda a população próxima a algum ponto indevido de descarte.</p>
+        <p style="font-size:150%;">Tipos de Substâncias Nocivas e seus Efeitos</p>
+        <p>Arsênico - elemento metálico venenoso, em forma de pó ou substâncias solúveis. A exposição crônica pode causar doenças de pele, retardar os impulsos nervosos, câncer de pulmão e ser fatal.</p>
+        <p>Bário - usado em velas de ignição, lâmpadas fluorescentes e tubos a vácuo. Altamente instável, forma óxidos venenosos ao contato com o ar. Pode causar edema cerebral, fraqueza muscular e danos a órgãos. Em animais, provoca hipertensão e alterações cardíacas. Os efeitos crônicos em humanos ainda não são bem conhecidos.</p>
+        <p>Berílio - classificado como cancerígeno humano. A inalação de poeira ou névoa de berílio pode causar câncer de pulmão e beriliose (doença pulmonar crônica). Também pode provocar doenças de pele com dificuldade de cicatrização e verrugas. Seus efeitos podem aparecer anos após a exposição.</p>
+        <p>Retardantes de Chama Bromados (BFR) - incluem PBB, PBDE e TBBPA, usados em plásticos para resistência ao fogo. Migram para o ar e, quando queimados, liberam toxinas como dioxinas, causando distúrbios hormonais. Muitos fabricantes já estão eliminando seu uso.</p>
+        <p>Cádmio - afeta os rins e se acumula no corpo. Pode ser inalado ou ingerido. A exposição aguda provoca sintomas como fraqueza e febre. A exposição prolongada pode causar câncer pulmonar, enfisema e doenças ósseas como osteomalácia e osteoporose.</p>
+        <p>Clorofluorocarbonetos (CFCs) - compostos usados em refrigeração e isolamento. Acumulam-se na estratosfera, prejudicando a camada de ozônio, aumentando casos de câncer de pele e danos genéticos.</p>
+        <p>Cromo - amplamente usado por suas propriedades anticorrosivas. O cromo VI (hexavalente) é tóxico e absorvido pelo organismo, podendo causar irritações, danos aos olhos e ao DNA.</p>
+        <p>Dioxinas e furanos - incluem 75 tipos de dioxinas e 135 de furanos. Formadas como subprodutos indesejáveis, acumulam-se no corpo e causam malformações fetais, infertilidade, baixa imunidade e doenças. A TCDD é a mais tóxica.</p>
+        <p>Chumbo - muito usado na indústria eletroeletrônica. Altas exposições causam vômitos, convulsões e até morte. Pode afetar rins e, em crianças, causar danos neurológicos.</p>
+        <p>Mercúrio - metal pesado altamente tóxico, comum em baterias, interruptores e lâmpadas. Acumula-se no corpo, causando danos cerebrais e ao fígado.</p>
+        <p>Bifenilos Policlorados (PCBs) - compostos usados em transformadores, plásticos e adesivos. Causam câncer e disfunções nos sistemas imunológico, reprodutor, nervoso e endócrino. São bioacumulativos e proibidos em muitos países, mas ainda presentes em resíduos.</p>
+        <p>Cloreto de Polivinila (PVC) - plástico comum em eletrônicos e tubulações. Contém até 56% de cloro que, ao ser queimado, libera gás cloreto de hidrogênio, formando ácido clorídrico, que causa problemas respiratórios.</p>
+        <p>Selênio — em altas concentrações, causa selenose, cujos sintomas incluem queda de cabelo, unhas frágeis e alterações neurológicas.</p>
+        <!--  
+          RISCOS À SAÚDE
+          PORQUE RECICLAR EM LOCAL APROPRIADO SEPARADO DE OUTROS LIXOS
+          PEQUENO TEXTO SOBRE RECICLAGEM DE LIXO ELETRONICO CONTEUDO SECUNDARIO
+          TUDO SOBRE RECICLAGEM, A PARTE PRINCIPAL (LEGISLAÇÃO) FICARÁ NO
+          CONTEÚDO PRINCIPAL
+        -->
+      </article>
+      <div class="main">
+        <p style="font-size:180%;">Legislação Sobre a Reciclagem de Lixo Eletrônico</p>
+        <p>No Brasil, a legislação sobre reciclagem de lixo eletrônico é regulada pela Política Nacional de Resíduos Sólidos (PNRS), Lei nº 12.305/2010. A PNRS estabelece a responsabilidade compartilhada entre fabricantes, importadores, distribuidores, comerciantes, consumidores e o poder público na gestão dos resíduos, incluindo o lixo eletrônico. A lei também promove a logística reversa, incentivando o retorno de resíduos para reciclagem ou tratamento adequado.</p>
+        <p>A legislação incentiva a reciclagem e a reutilização dos materiais, reduzindo a necessidade de destinar materiais para aterros sanitários.</p>
+        <p>No estado de São Paulo, a Lei Estadual nº 13.576/2009 já previa normas específicas para o descarte e a reciclagem do lixo eletrônico, demonstrando um pioneirismo na abordagem desse tipo de resíduo.</p>
+        <p>Recentemente, o Projeto de Lei nº 4094/2024 propõe a criação do Programa Nacional de Coleta, Reciclagem e Descarte de Equipamentos Eletrônicos, visando reforçar as ações existentes e promover a coleta seletiva, reciclagem e descarte sustentável de dispositivos eletrônicos em todo o país.</p>
+        <p><b>CONAMA</b></p>
+        <p>A CONAMA (Conselho Nacional do Meio Ambiente) estabelece limites para o uso de substâncias tóxicas em pilhas e baterias, e dá responsabilidade aos fabricantes em ter sistemas de coleta de lixo eletrônico.</p>
+        <p style="font-size:180%;">Lixo Eletrônico e o Meio Ambiente</p>  
+        <p>O lixo eletrônico é produzido por materiais de origem inorgânica, por exemplo, cobre, alumínio, metais pesados (mercúrio, cádmio, berílio e chumbo).Eles podem comprometer o meio ambiente visto que são compostos por elementos muito poluentes os quais são absorvidos pelo solo e pelos lençóis freáticos comprometendo o equilíbrio ecológico.</p>
+        <p>Além de poluir o ambiente, o contato com esses produtos pode acarretar diversas doenças para os animais e os seres humanos.</p>
+        <p style="font-size:180%;">Reciclagem de Lixo Eletrônico</p>
+        <p>Estatísticas apontam que cerca de 50 milhões de toneladas de lixo eletrônico são produzidos anualmente em todo o mundo, sendo que 10 milhões são reciclados na China.</p>
+	      <p>No entanto, vale notar que esse processo pode ser realizado pela exploração de pessoas, até mesmo de crianças e idosos.
+	        Um exemplo notório dessa exploração, bem como do excesso de lixo eletrônico produzido no mundo, é a cidade de Guiyu, na China, donde milhares de pessoas trabalham separando esses resíduos.
+	        Esse processo pode ser altamente perigoso para os seres humanos que o realizam visto os elementos presentes nesse tipo de lixo, ou seja, metais pesados e radioativos, estudos apontam que o solo e os cursos de água da região já estão contaminados pelos produtos eletrônicos.</p>
+	      <p>Com o aumento da globalização e da tecnologia, novos aparelhos eletrônicos são lançados em curto espaço de tempo, o que leva as pessoas a trocarem seus aparelhos mesmo que ainda estejam funcionando,
+          dados apontam que nos Estados Unidos, cerca de 300 milhões de aparelhos eletrônicos são descartados anualmente, sendo que seis em cada dez deles ainda em condições perfeitas de funcionamento.
+	        De tal modo, o que pode parecer um simples ato de consumo, esse tipo de ação tem grande impacto no meio ambiente, como a poluição do solo, da água e do ar.
+	        Vale lembrar que as empresas que fabricam esses produtos utilizam uma técnica denominada de “obsolescência programada”, ou seja, oferecem um tempo de validade para esses produtos, o que leva os consumidores a consumirem cada vez mais.</p>
+	      <p>Assim, visto a quantidade de lixo eletrônico produzido no mundo, a melhor alternativa é a reciclagem desses produtos.</p>
+        <p style="font-size:180%;">Coleta e Descarte de Lixo Eletrônico</p>
+        <p>Atualmente, muitas empresas que fabricam e que são responsáveis por grande parte da poluição proveniente dos produtos eletrônicos estão apostando em ações de sustentabilidade e, portanto, oferecem locais apropriados para o descarte desses aparelhos.</p>
+	      <p>Nesse ínterim, a própria empresa recicla esses materiais, gerando outros novos. Há ainda casos em que as pessoas levam seus aparelhos usados e trocam por um novo, mediante o pagamento da diferença.</p>
+        <p>Um dado importante é que cerca de 80% de todo o lixo eletrônico produzido pelos países desenvolvidos, é transportado para os países pobres, sobretudo da África, do Oriente Médio e da Ásia.</p>
+        <p style="font-size:180%;">Lixo Eletrônico no Brasil</p>
+        <p>No Brasil, o aumento da comercialização de produtos eletrônicos nas últimas décadas tem gerado grande problemas ambientais como a poluição do meio ambiente. Entre os países subdesenvolvidos, o Brasil é o país que mais gera lixo eletrônico no mundo</p>
+        <p>A Lei Estadual de São Paulo nº 13.576, de 6 de julho de 2009, institui normas e procedimentos para a reciclagem, gerenciamento e destinação final de lixo tecnológico:</p>
+        <p>Artigo 1º - Os produtos e os componentes eletroeletrônicos considerados lixo tecnológico devem receber destinação final adequada que não provoque danos ou impactos negativos ao meio ambiente e à sociedade.</p>
+        <p>Parágrafo único - A responsabilidade pela destinação final é solidária entre as empresas que produzam, comercializem ou importem produtos e componentes eletroeletrônicos.”</p>
+        <p>Dados da Pnuma (Programa da ONU para o Meio Ambiente) apontam que o Brasil descarta anualmente cerca de 97 mil toneladas métricas de computadores; 2,2 mil toneladas de celulares; e 17,2 mil toneladas de impressoras.</p>
+        <p>Em 2014, a ONU (Organização das Nações Unidas) declarou que o Brasil produziu 1,4 milhão de toneladas de lixo eletrônico.</p>
+        <p>Esses valores são assustadores e, portanto, devemos nos conscientizar de seus danos e começar a ter uma postura ética e responsável com o descarte correto dos produtos eletrônicos, sejam os fabricantes ou os consumidores.</p>
+        <p>Campanhas de conscientização precisam ser promovidas de modo a alertar a população mundial da importância da separação desses e de outros tipos de lixo com o descarte correto.</p>
+        <p>Ainda que nem todas as cidades do Brasil realizem a coleta e reciclagem do lixo eletrônico, atualmente, cerca de 720 cidades apresentam esse serviço. No entanto, o país continua longe de conseguir coletar esses materiais em larga escala.</p>
+        <p style="font-size:180%;">Consequências e Possíveis Soluções</p>
+        <p>Visto as consequências negativas que esse tipo de resíduos pode provocar no meio ambiente, a melhor solução é o descarte correto nas empresas ou cooperativas que recebem esses materiais e os levam para a reciclagem.
+	        Esse simples ato, faz com que o ambiente não fique poluído e ainda, favorece a economia com o reaproveitamento de materiais que possam ser reciclados.
+	        Além do descarte em locais apropriados, doações de aparelhos em funcionamento para entidades sociais, podem ajudar a diminuir esse problema.</p>
+        <p style="font-size:180%;">Problemas do Descarte Inadequado</p>
+        <p>Os resíduos de equipamentos eletrônicos, se descartados de forma inadequada, constituem um sério risco para o meio ambiente, pois possuem em sua composição metais pesados altamente tóxicos, como mercúrio, cádmio, berílio e chumbo, além de outros compostos químicos como os BFRs (Brominated Flame Retardants). Em contato com o solo, os metais pesados contaminam o lençol freático; se queimados, os BFRs liberam toxinas perigosas ao meio ambiente. Portanto, a manipulação e processamento dos REEE, de forma incorreta e desprotegida, contamina os seres humanos que executam estas tarefas e o meio ambiente à sua volta.</p>
+          <!--
+          LEGISLAÇÃO A RESPEITO DO LIXO ELETRÔNICO NO <b>BRASIL</b>:
+          CONSCIÊNCIA, DESCARTE E RECICLAGEM
+          -->
+      </div>
+      <aside>
+        <a href="https://blog.eureciclo.com.br/dicas-reduzir-lixo-eletronico/"><img style="border-radius:10px 0 0 0;" src="img/lixo-eletronico.jpg"></a>
+        <a href="https://greeneletron.org.br/blog/novas-campanhas-de-descarte-de-lixo-eletronico-respeitam-normas-de-distanciamento-social/"><img src="img/lixo-pilhas.jpg"></a>
+        <img style="border-radius:0 0 0 10px;margin-bottom:0;" src="img/lixo-recicla.png">
+        <p>Referências:</p>
+        <a href="https://www.todamateria.com.br/lixo-eletronico/">Toda Matéria</a><br>
+        <a href="https://www12.senado.leg.br/institucional/responsabilidade-social/meio-ambiente/pages/lixo-eletronico">Senado</a><br>
+        <a href="https://pt.wikipedia.org/wiki/Res%C3%ADduo_eletr%C3%B4nico">Wikipedia</a><br>
+        <a href="https://www.camara.leg.br/noticias/1133614-projeto-cria-programa-nacional-de-coleta-reciclagem-e-descarte-de-equipamentos-eletronicos/?utm_source=chatgpt.com">Câmara dos Deputados</a>
+      </aside>
+    </main>
+    <footer>
+      <p>
+        Unipar Francisco Beltrão - Av. Júlio Assis Cavalheiro, 2000 - Centro,
+        Francisco Beltrão - PR, 85601-000
+      </p>
+      <p></p>
+    </footer>
+    <script>
+      function pesquisar() {
+        const termo = document.getElementById("campoPesquisa").value.toLowerCase();
+        const elementos = document.querySelectorAll("p");
+        let encontrou = false;
+        // Remove destaques anteriores
+        document.querySelectorAll("mark").forEach(m => {
+          const textoOriginal = m.textContent;
+          m.replaceWith(document.createTextNode(textoOriginal));
+        });
+        elementos.forEach(elem => {
+          const texto = elem.textContent.toLowerCase();
+          if (texto.includes(termo) && !encontrou) {
+            encontrou = true;
+            elem.scrollIntoView({ behavior: "smooth", block: "center" });
+            const regex = new RegExp(`(${termo})`, 'gi');
+            elem.innerHTML = elem.innerHTML.replace(regex, '<mark>$1</mark>');
+          }
+        });
+        if (!encontrou) {
+        alert("Termo não encontrado na página.");
+        }
+      }
+    </script>
+  </body>
+</html>

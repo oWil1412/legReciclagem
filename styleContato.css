@@ -1,0 +1,232 @@
+* {
+  
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6f4e8;
+  text-align: center;
+}
+/* abre header adaptado - wilian */
+header{
+  padding:0;
+  background-color:#00bd00ba;
+  height:8vmin;
+  width:100%;
+  display:flex;
+  align-items:center;
+}
+header a, img{
+  width:auto;
+  height:90%;
+  margin:2px;
+}
+input:focus{
+  border:1px solid #00ff00;
+  outline:none; /*tira aquela borda horrivel*/
+}
+.mobile-menu, .menu-toggle{
+  display:none;
+}
+.menu-toggle{
+  color:white;
+  align-content:center;
+}
+.menu-toggle:hover{
+  background-color:#006100;
+}
+@media(max-width:768px){
+  .menu-toggle{
+    display:block;
+  }
+  .navDesk{
+    display:none;
+  }
+  article{
+    border-radius:0px;
+  }
+  .main{
+    border-radius:0px;
+  }
+  header{
+    height:12vmin;
+  }
+  footer{
+    height:12vmin;
+  }
+  footer p{
+    display:block;
+    position:absolute;
+    font-size:12px;
+  }
+}
+@media(min-width:769px){
+  .navDesk{
+    display:flex;
+    gap:1rem;
+  }
+}
+.mobile-menu{
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: #fff;
+  width: 200px;
+  padding: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  z-index: 20;
+}
+.-translate-x-full{
+  transform: translateX(-100%);
+}
+.hidden{
+  display:none;
+}
+.sidebarButton, .sidebarButton:hover{
+  color:black;
+  border:none;
+  background-color:white;
+  width:100%;
+  text-align:left;
+}
+button{
+  border:none;
+  border-radius:10px;
+  padding:3px;
+  font-family:"montserrat", sans-serif;
+  height:100%;
+  background-color:#00bd00ba;
+  color:white;
+  justify-content:center;
+  font-family: "Montserrat", sans-serif;
+}
+.search{
+  display:flex;
+  height:50%;
+  align-items:center;
+  margin-right:1%;
+  gap:1rem;
+  list-style:none;
+}
+.search button{
+  height:100%;
+  border:none;
+  align-items:center;
+  border-radius:8px;
+  padding:3px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+}
+input{
+  justify-content:right;
+  padding:5px;
+  border-radius:7px;
+  border:none;
+  background-color:#008000;
+  height:100%;
+  width:auto;
+}
+button:hover{
+  background-color:#01a701;
+  transition: 0.5s;
+}
+::-webkit-input-placeholder{
+  color:white;
+  /*trocar cor do placeholder*/
+}
+/* fecha header adaptado - wilian */
+h1 {
+  background-color: #1b5e20;
+  color: white;
+  padding: 20px;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  overflow:visible;
+  position:relative;
+}
+.card {
+  background-color: white;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+  padding: 20px;
+  position: relative;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+  transform-origin:center center;
+  z-index:0;
+  position:relative;
+}
+.card:hover{
+  transform:scale(1.10);
+  z-index:10;
+}
+.card .photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card img.recycle {
+  width: 30px;
+  height:30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.card h2, h3 {
+  font-size: 1.2em;
+  color: #2e7d32;
+  margin: 10px 0 5px;
+}
+.social-icons {
+  margin-top: 15px;
+}
+.social-icons a img {
+  width: 24px;
+  margin-right: 10px;
+}
+.email {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+  word-break: break-word;
+}
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+footer{
+  background-color:#00bd00ba;
+  height:8vmin;
+  color:white;
+  margin-top:1%;
+  padding:1vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  margin-bottom:0px;
+}
+.navDesk{
+  justify-content:center;
+  margin-right:auto;
+  margin-left:auto;
+}

@@ -1,0 +1,56 @@
+html{
+    margin:0;
+    padding:0;
+    background-color:rgb(180, 180, 180);
+}
+header{
+    height:10vh;
+    background-color:rgb(40, 40, 40);
+    align-items:center;
+    display:flex;
+}
+main{
+    padding:100px;
+}
+footer{
+    height:8vh;
+    background-color:rgb(40, 40, 40);
+    padding:10px;
+    text-align:center;
+}
+button{
+    border:none;
+    background-color:rgb(40, 40, 40);
+    color:white;
+}
+.header{
+    display:flex;
+}
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:25px;
+    margin-left:20px;
+    line-height:0px;
+}
+.linha{
+    display:flex;
+    margin-top:20px;
+    justify-content:center;
+}
+.card{
+    padding:10px;
+    display:flex;
+    transition: transform 0.2s ease-in-out;
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img{
+    width:100rem;
+    border-radius:15px;
+    border:2px solid black;
+}
+h6{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    font-size:15px;
+    margin:10px;
+}
