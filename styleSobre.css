@@ -39,6 +39,7 @@ input:focus{
   display:none;
 }
 .menu-toggle{
+  background-color:#00bd00ba;
   color:white;
   align-content:center;
 }
