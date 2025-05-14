@@ -45,7 +45,7 @@ input:focus{
 .menu-toggle:hover{
   background-color:#006100;
 }
-@media(max-width:768px){
+@media(max-width:599px){
   .menu-toggle{
     display:block;
   }
@@ -69,8 +69,11 @@ input:focus{
     position:absolute;
     font-size:12px;
   }
+  .search{
+    margin-left:auto; 
+  }
 }
-@media(min-width:769px){
+@media(min-width:600px){
   .navDesk{
     display:flex;
     gap:1rem;
