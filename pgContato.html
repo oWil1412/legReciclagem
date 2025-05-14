@@ -31,9 +31,12 @@
         </div>
         <div id="overlay" class="hidden" style="position:fixed;top:0;left:0;width:100%;height:100%;background:black;opacity:0.5;z-index:10;"></div>
         <div class="search">
-          <input type="search" placeholder="Pesquisar" style="margin:5px;">
-          <a href=""><img src="img/lupa.png" style="width:25px;"></a>
+          <form onsubmit="pesquisar(); return false;">
+            <input type="search" id="campoPesquisa" placeholder="Pesquisar" style="margin:5px;">
+            <button type="submit"><img src="img/lupa.png" style="width:25px;"></button>
+          </form>
         </div>
+
         <script>
           const menuBtn = document.getElementById('menu-btn');
           const closeBtn = document.getElementById('close-btn');
@@ -180,5 +183,29 @@
       </p>
       <p></p>
     </footer>
+  <script>
+  function pesquisar() {
+    const termo = document.getElementById("campoPesquisa").value.toLowerCase();
+    const elementos = document.querySelectorAll("h2");
+    let encontrou = false;
+    // Remove destaques anteriores
+    document.querySelectorAll("mark").forEach(m => {
+      const textoOriginal = m.textContent;
+      m.replaceWith(document.createTextNode(textoOriginal));
+    });
+    elementos.forEach(elem => {
+      const texto = elem.textContent.toLowerCase();
+      if (texto.includes(termo) && !encontrou) {
+        encontrou = true;
+        elem.scrollIntoView({ behavior: "smooth", block: "center" });
+        const regex = new RegExp(`(${termo})`, 'gi');
+        elem.innerHTML = elem.innerHTML.replace(regex, '<mark>$1</mark>');
+      }
+    });
+    if (!encontrou) {
+      alert("Termo não encontrado na página.");
+    }
+  }
+</script>
 </body>
 </html>
