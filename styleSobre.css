@@ -106,7 +106,6 @@ button{
   background-color:#00bd00ba;
   color:white;
   justify-content:center;
-  font-family: "Montserrat", sans-serif;
 }
 .search{
   display:flex;
@@ -143,6 +142,7 @@ button:hover{
   justify-content:center;
   margin-right:auto;
   margin-left:auto;
+  height:50%;
 }
 ::-webkit-input-placeholder{
   color:white;
