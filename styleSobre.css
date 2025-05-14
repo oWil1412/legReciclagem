@@ -113,8 +113,8 @@ button{
   height:50%;
   align-items:center;
   margin-right:1%;
-  gap:1rem;
-  list-style:none;
+  justify-content:right;
+  text-align:right;
 }
 .search button{
   height:100%;
