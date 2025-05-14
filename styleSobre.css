@@ -5,15 +5,144 @@ body {
     padding: 0;
 }
 
-header {
+/* header {
     background-color: #1b5e20;
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
+} */
+/* abre header adaptado - wilian */
+header{
+  padding:0;
+  background-color:#00bd00ba;
+  height:8vmin;
+  width:100%;
+  display:flex;
+  align-items:center;
 }
-
+header a, img{
+  width:auto;
+  height:90%;
+  margin:2px;
+}
+input:focus{
+  border:1px solid #00ff00;
+  outline:none; /*tira aquela borda horrivel*/
+}
+.mobile-menu, .menu-toggle{
+  display:none;
+}
+.menu-toggle{
+  color:white;
+  align-content:center;
+}
+.menu-toggle:hover{
+  background-color:#006100;
+}
+@media(max-width:768px){
+  .menu-toggle{
+    display:block;
+  }
+  .navDesk{
+    display:none;
+  }
+  article{
+    border-radius:0px;
+  }
+  .main{
+    border-radius:0px;
+  }
+  header{
+    height:12vmin;
+  }
+  footer{
+    height:12vmin;
+  }
+  footer p{
+    display:block;
+    position:absolute;
+    font-size:12px;
+  }
+}
+@media(min-width:769px){
+  .navDesk{
+    display:flex;
+    gap:1rem;
+  }
+}
+.mobile-menu{
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: #fff;
+  width: 200px;
+  padding: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  z-index: 20;
+}
+.-translate-x-full{
+  transform: translateX(-100%);
+}
+.hidden{
+  display:none;
+}
+.sidebarButton, .sidebarButton:hover{
+  color:black;
+  border:none;
+  background-color:white;
+  width:100%;
+  text-align:left;
+}
+button{
+  border:none;
+  border-radius:10px;
+  padding:3px;
+  font-family:"montserrat", sans-serif;
+  height:100%;
+  background-color:#00bd00ba;
+  color:white;
+  justify-content:center;
+  font-family: "Montserrat", sans-serif;
+}
+.search{
+  display:flex;
+  height:50%;
+  align-items:center;
+  margin-right:1%;
+  gap:1rem;
+  list-style:none;
+}
+.search button{
+  height:100%;
+  border:none;
+  align-items:center;
+  border-radius:8px;
+  padding:3px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:white;
+}
+input{
+  justify-content:right;
+  padding:5px;
+  border-radius:7px;
+  border:none;
+  background-color:#008000;
+  height:100%;
+  width:auto;
+}
+button:hover{
+  background-color:#01a701;
+  transition: 0.5s;
+}
+::-webkit-input-placeholder{
+  color:white;
+  /*trocar cor do placeholder*/
+}
+/* fecha header adaptado - wilian */
 main {
     display: flex;
     justify-content: center;
