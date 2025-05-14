@@ -138,6 +138,11 @@ button:hover{
   background-color:#01a701;
   transition: 0.5s;
 }
+.navDesk{
+  justify-content:center;
+  margin-right:auto;
+  margin-left:auto;
+}
 ::-webkit-input-placeholder{
   color:white;
   /*trocar cor do placeholder*/
