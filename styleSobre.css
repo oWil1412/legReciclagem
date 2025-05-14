@@ -115,6 +115,7 @@ button{
   margin-right:1%;
   justify-content:right;
   text-align:right;
+    font-family:"montserrat";
 }
 .search button{
   height:100%;
@@ -216,12 +217,13 @@ main {
     color: #333;
     display: flex;
     margin-top: 15vh;
+    font-family:"montserrat";
 }
 
 .montserrat-uniquifier {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 500;
     font-style: normal;
 }
 
